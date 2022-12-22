@@ -4,6 +4,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sb
 
+import platform
+from matplotlib import font_manager, rc
+plt.rcParams['axes.unicode_minus'] = False
+if platform.system() == 'Linux':
+    rc('font', family='NanumGothic')
+
 def run_eda_app() :
     df = pd.read_csv('data/Car_Purchasing_Data.csv',encoding='ISO-8859-1')
 

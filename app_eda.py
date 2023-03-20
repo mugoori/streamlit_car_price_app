@@ -4,6 +4,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sb
 
+# 이 코드는 ec2에 한글 폰트가 설치되어 있어야 하고
+# 파이썬에서 한글 사용가능토록 먼저 셋팅해야 한다
+# https://luvris2.tistory.com/119#1.3.%20matplotlib%EC%97%90%20%ED%95%9C%EA%B8%80%20%ED%8F%B0%ED%8A%B8%20%EC%B6%94%EA%B0%80
 import platform
 from matplotlib import font_manager, rc
 plt.rcParams['axes.unicode_minus'] = False
